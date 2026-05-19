@@ -15,12 +15,7 @@ Original file is located at
 """Transfer Learning for Computer Vision Tutorial
 ==============================================
 
-**Author**: [Sasank Chilamkurthy](https://chsasank.github.io)
 
-In this tutorial, you will learn how to train a convolutional neural
-network for image classification using transfer learning. You can read
-more about the transfer learning at [cs231n
-notes](https://cs231n.github.io/transfer-learning/)
 
 Quoting these notes,
 
@@ -45,8 +40,7 @@ These two major transfer learning scenarios look as follows:
 
 """
 
-# License: BSD
-# Author: Sasank Chilamkurthy
+
 
 import torch
 import torch.nn as nn
@@ -304,8 +298,7 @@ Here, we need to freeze all the network except the final layer. We need
 to set `requires_grad = False` to freeze the parameters so that the
 gradients are not computed in `backward()`.
 
-You can read more about this in the documentation
-[here](https://pytorch.org/docs/notes/autograd.html#excluding-subgraphs-from-backward).
+
 
 """
 
@@ -381,11 +374,3 @@ visualize_model_predictions(
 plt.ioff()
 plt.show()
 
-"""Further Learning
-================
-
-If you would like to learn more about the applications of transfer
-learning, checkout our [Quantized Transfer Learning for Computer Vision
-Tutorial](https://pytorch.org/tutorials/intermediate/quantized_transfer_learning_tutorial.html).
-
-"""
